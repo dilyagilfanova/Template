@@ -29,6 +29,11 @@ namespace Template_4332
             _4332_Khamitova elina= new _4332_Khamitova();
             elina.Show();
         }
+        private void Gilfanova_4332_Click(object sender, RoutedEventArgs e)
+        {
+            _4332_Gilfanova dilya = new _4332_Gilfanova();
+            dilya.Show();
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
