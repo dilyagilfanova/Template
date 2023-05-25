@@ -22,5 +22,9 @@
             <Button x:Name="import_elina" Width="109" Height="30" VerticalAlignment="Top" Background="#FFB4C9FF" Content="Импорт данных" Click="import_elina_Click"></Button>
             <Button x:Name="export_elina" Width="109" Height="30" VerticalAlignment="Top" Margin="10,0,0,0"  Background="#FFB4C9FF" Content="Экспорт в Excel" Click="export_elina_Click"></Button>
         </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button x:Name="import_json_elina" Width="133" Height="30" VerticalAlignment="Top" Background="#FFB4C9FF" Content="Импорт JSON данных" Click="import_json_elina_Click"></Button>
+            <Button x:Name="export_word_elina" Width="133" Height="30" VerticalAlignment="Top" Margin="10,0,0,0"  Background="#FFB4C9FF" Content="Экспорт в Word" Click="export_word_elina_Click"></Button>
+        </StackPanel>
     </Grid>
 </Window>

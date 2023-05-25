@@ -84,7 +84,7 @@ namespace Template_4332
                 }
                 MessageBox.Show("Данные экспортированы в Word");
                 app.Visible = true;
-                document.SaveAs2(@"D:\Desktop\elina.docx");
+                document.SaveAs2(@"D:\ЗагрузкиD\dilya.docx");
             }
         }
 
@@ -93,7 +93,7 @@ namespace Template_4332
 
             using (GilfanovaContext usersEntities = new GilfanovaContext())
             {
-                string jsonFilePath = @"D:\Desktop\Импорт3лр\5.json";
+                string jsonFilePath = @"D:\ЗагрузкиD\Импорт\5.json";
                 string json = File.ReadAllText(jsonFilePath);
                 json = json.Substring(0, json.Length - 1);
                 string[] obj = json.Split('}');
@@ -136,7 +136,7 @@ namespace Template_4332
         {
             string[,] list;
             Excel.Application ObjWorkExcel = new Excel.Application();
-            Excel.Workbook ObjWorkBook = ObjWorkExcel.Workbooks.Open(@"D:\загрузкиD\Импорт\5.xlsx");
+            Excel.Workbook ObjWorkBook = ObjWorkExcel.Workbooks.Open(@"D:\Desktop\Импорт\5.xlsx");
             Excel.Worksheet ObjWorkSheet = (Excel.Worksheet)ObjWorkBook.Sheets[1];
             var lastCell = ObjWorkSheet.Cells.SpecialCells(Excel.XlCellType.xlCellTypeLastCell);
             int _columns = (int)lastCell.Column;
